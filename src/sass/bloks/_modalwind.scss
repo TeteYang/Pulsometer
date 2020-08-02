@@ -1,0 +1,55 @@
+.overinfo{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, .56);
+    top: 0;
+}
+.modalwind{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    min-height: 480px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+    &__subtitle{
+        color: #0d0d0d;
+        @include font-18-600;
+        margin-bottom: 10px;
+    }
+    &__discr{
+        color: #0d0d0d;
+        @include font-14-600;
+        margin-bottom: 25px;
+    }
+    &__close{
+        position: absolute;
+        top: -35px;
+        right: -12%;
+        color: red;
+        font-weight: 600;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    &_mini{
+        min-height: 140px;
+    }
+    .error{
+        border: 1px solid red;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    input.error{
+        border: none;
+        text-align: center;
+    }
+}
+#consultantwind, #orderwind, #thankswind{
+    display: none;
+}

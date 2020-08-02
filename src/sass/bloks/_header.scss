@@ -1,0 +1,79 @@
+.layout-950{
+    @include layout-950;
+ }
+ .header-section{
+     @include bgimg-style;
+     background: url('../img/bg1.png') no-repeat;
+     padding: 0 5%;
+ }
+ .header{
+     display: flex;
+     justify-content: space-between;
+     padding-top: 15px;
+
+     .header__middle-column{
+         color: $white;
+         text-align: center;
+         .header__par1{
+             font-size: 12px;
+             font-weight: 400;
+         }
+     }
+     .header__number-box{
+         display: flex;
+         flex-direction: column;
+     }
+     .header__number-box .header__num{
+         @include font-18-400;
+         color: $white;
+         margin-bottom: 5px;
+     }
+ }
+ .par2{
+     @include font-18-400
+ }
+ .wrapper-header-par{
+     display: flex;
+     flex-direction: column;
+     justify-content: right;
+     color: $white;
+     text-transform: uppercase;
+     margin-top: 91px;
+     .wrapper-header-par__par3{
+         font-size: 35px;
+         font-weight: 400;
+         text-align: right;
+     }
+     .wrapper-header-par__par4{
+         font-size: 24px;
+         font-weight: 400;
+         text-align: right;
+     }
+ }
+ .wrapper-header-icons{
+     @include flex-end;
+     .wrapper-header-icons__wrap-icons{
+         display: flex;
+         justify-content: space-evenly;
+         width: 450px;
+     }
+ }
+ .wrapper-header-btn{
+     @include flex-end;
+     margin-top: 68px;
+     padding-bottom: 53px;
+     .wrapper-header-btn_button{
+         width: 400px;
+         text-align: right;
+     }
+     .wrapper-header-btn_button .par-5{
+         font-size: 16px;
+         font-weight: 400;
+         color: $white;
+         margin-top: 10px;
+         span{
+             text-decoration: underline;
+             color: $white;
+         }
+     }
+ }

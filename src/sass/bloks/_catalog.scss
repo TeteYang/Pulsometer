@@ -1,0 +1,180 @@
+.layout-980{
+    width: 980px;
+    margin: 0 auto;
+}
+.catalog-goods{
+    padding-bottom: 100px;
+.title{
+    @include font-22-600;
+    padding-bottom: 69px;
+}
+}
+.catalog{
+   &__tabs {
+       list-style-type: none;
+       display: flex;
+       justify-content: center;
+       margin-bottom: 0;
+       padding-left: 0;
+   }
+   &__tab{
+    width: 220px;
+    height: 50px;
+    border: 2px solid #d0d0d0;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 48px;
+    @include font-18-400;
+    transform: skewX(-27deg);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s all;
+    margin-bottom: 60px;
+    &:hover{
+        box-shadow: 3px 3px 20px $red;
+        border: none;
+    }
+    div{
+        transform: skewX(27deg);
+    }
+    &_active{
+        background-color: $red;
+        border: $red;
+        color: $white;
+    }
+   }
+    &__cards{
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_active{
+            display: flex;
+        }
+    }
+    &-item{
+        width: 300px;
+        min-height: 440px;
+        border: 2px solid #e8e8e8;
+        background-color: $white;
+        margin: 0 10px;
+        margin-bottom: 20px;
+        padding: 20px 20px 26px 20px;
+        overflow: hidden;
+
+        &_img{
+            max-width: 100%;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+            padding: 0 0 20px 0;
+
+        }
+        &_subtext{
+            text-align: center;
+            @include font-18-600;
+            padding: 0 0 16px 0;
+        }
+        &_descr{
+            text-align: center;
+            @include font-14-600;
+            padding: 0 0 17px 0;
+        }
+        &_link{
+            display: flex;
+            justify-content: center;
+            @include font-18-600;
+            color: $red;
+            text-transform: uppercase;
+            text-decoration: underline;
+            border: 0;
+            background-color: white;
+            margin: 0 auto;
+        }
+        &_back{
+            display: flex;
+            justify-content: center;
+            @include font-18-600;
+            color: $red;
+            text-transform: uppercase;
+            text-decoration: underline;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            display: block;
+            color: $red;
+            @include font-18-600;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+        hr{
+            width: 260px;
+            border-bottom: none;
+            background-color: #e8e8e8;
+        }
+        .btn-price{
+            display: flex;
+        }
+        &_prices{
+            display: flex;
+            justify-content: space-evenly;
+            &_old-price{
+                color: #555555;
+                font-size: 15px;
+                font-weight: 600;
+                text-decoration: line-through;
+                margin-bottom: 8px;
+            }
+            &_new-price{
+                font-size: 14px;
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+        &__wrapper{
+           display: flex;
+           width: calc(200% + 40px);
+        }
+        &__contents{
+            width: 50%;
+            margin-right: 20px;
+            transform: (translateX(0%));
+            transition: 0.5s all;
+            &_active{
+                transform: (translateX(-100%));
+                margin-right: 20px;
+            }
+        }
+        &__list{
+            position: relative;
+            width: 50%;
+            margin-left: 0px;
+            padding-right: 20px;
+            transform: (translateX(0%));
+            transition: 0.5s all;
+            padding-left: 19px;
+            margin-bottom: 0px;
+            list-style-type: none;
+            &_active{
+                transform: (translateX(-100%));
+                margin-left: -10px;
+            }
+
+        li{
+            position: relative;
+            color: #555555;
+            @include font-14-600;
+            padding-bottom: 10px;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background-color: $red;
+                left: -20px;
+                top: 7px;
+            }
+        }
+    }
+  }
+}

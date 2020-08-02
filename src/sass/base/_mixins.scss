@@ -1,0 +1,48 @@
+@mixin layout-950 {
+    max-width: 950px;
+    margin: 0 auto;
+}
+@mixin bgimg-style{
+    background-size: cover;
+    background-position: center;
+}
+@mixin font-14-400{
+    font-size: 14px;
+    font-weight: 400;
+}
+@mixin font-14-600{
+    font-weight: 600;
+    font-size: 14px;
+}
+@mixin font-14-800{
+    font-weight: 600;
+    font-size: 14px;
+}
+@mixin font-18-400 {
+    font-size: 18px;
+    font-weight: 400;
+}
+@mixin font-20-400 {
+    font-size: 18px;
+    font-weight: 400;
+}
+@mixin font-18-600 {
+    font-size: 18px;
+    font-weight: 600;
+}
+@mixin font-22-600 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+@mixin font-22-400 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+@mixin flex-end {
+    display: flex;
+    justify-content: flex-end;
+}

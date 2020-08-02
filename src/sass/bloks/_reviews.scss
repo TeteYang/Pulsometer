@@ -1,0 +1,25 @@
+.reviews{
+    @include bgimg-style;
+}
+.title{
+    @include font-22-600;
+    padding-bottom: 70px;
+}
+.reviews-info{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 48px;
+    &_people{
+    display: flex;
+    justify-content: space-evenly;
+}
+    &_rev{
+        width: 70%;
+    }
+}
+hr{
+    width: 940px;
+    height: 1px;
+    background-color: #f6f6f6;
+    margin-bottom: 53px;
+}

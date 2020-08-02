@@ -1,0 +1,15 @@
+.form-box{
+    width: 230px;
+    height: 200px;
+}
+.feed-form{
+    width: 230px;
+    height: 200px;
+}
+.form-control{
+    margin-bottom: .8rem;
+}
+::-webkit-input-placeholder{
+    color: #4b4b4b;
+    @include font-14-600;
+}
