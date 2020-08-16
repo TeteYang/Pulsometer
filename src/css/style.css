@@ -1,35 +1,19 @@
-@font-face {
-  font-family: 'Museo Sans 300 Light';
-  src: url("../fonts/MuseoSansCyrl-300.eot");
-  src: url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+@import url(c:\Users\Acer\Desktop\pro\puls\src\sass\slick.css);
+@import url(c:\Users\Acer\Desktop\pro\puls\src\sass\slick-theme.css);
+@media only screen and (min-device-width: 280px) and (max-device-width: 653px) {
+  .header-section .wrapper-header-icons .wrapper-header-icons__wrap-icons {
+    display: none;
+  }
 }
 
-@font-face {
-  font-family: 'Museo Sans 500 Medium';
-  src: url("../fonts/MuseoSansCyrl-500.eot");
-  src: url("../fonts/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Museo Sans 700 Bold';
-  src: url("../fonts/MuseoSansCyrl-700.eot");
-  src: url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+@media only screen and (min-device-width: 280px) and (max-device-width: 812px) {
   .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    line-height: 4vh;
+    line-height: 5vh;
   }
   .header .btn {
     margin: 0 auto;
@@ -53,6 +37,9 @@
         grid-template-columns: none;
     grid-gap: 30px;
   }
+  .main-section1 .par-6 {
+    text-align: center;
+  }
   body .main-section2 .pr-9 {
     font-size: 24px;
   }
@@ -73,6 +60,12 @@
   }
   .catalog .catalog__tabs .catalog__tab {
     margin-bottom: 15px;
+  }
+  .catalog-item .catalog-item_prices {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .reviews-info .reviews-info_people {
     -webkit-box-orient: vertical;
@@ -99,6 +92,9 @@
     top: -27px;
     right: 0%;
   }
+  .reviews-info_rev p {
+    text-align: justify;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -106,6 +102,60 @@
     bottom: 165px;
     right: 242px;
   }
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@font-face {
+  font-family: 'Museo Sans 300 Light';
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans 500 Medium';
+  src: url("../fonts/MuseoSansCyrl-500.eot");
+  src: url("../fonts/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans 700 Bold';
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .layout-950 {
@@ -300,6 +350,17 @@
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
+}
+
+.main-section1 .container__section1_animated {
+  -webkit-animation-name: heartbeat;
+          animation-name: heartbeat;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .main-section2 {

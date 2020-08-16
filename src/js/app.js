@@ -1,9 +1,9 @@
 // slider
 $(document).ready(function(){
     $('.carusel__inner').slick({
-        speed: 1200,
+        speed: 3000,
         // adaptiveHeight: true,
-        // autoplay: true,
+        autoplay: true,
         // autoplaySpeed: 2000,
         nextArrow: '<button type="button" class="slick-next"><img src="icon/right-solid.png"></button>',
         prevArrow: '<button type="button" class="slick-prev"><img src="icon/left-solid.png"></button>',
